@@ -78,7 +78,7 @@ def index():
             
             client = pymongo.MongoClient("mongodb+srv://abir:Mallick@cluster0.obucrgb.mongodb.net/?retryWrites=true&w=majority")
             db = client['product_review']
-            review_col=db['product_review_data']
+            review_col=db['product_review_data79A2-828A']
             review_col.insert_many(reviews)
 
             return render_template('result.html', reviews=reviews[0:(len(reviews)-1)])
